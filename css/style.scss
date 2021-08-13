@@ -15,6 +15,37 @@ img {
     height: auto;
 }
 
+.fondo-buscar{
+    background: rgba(0, 0, 0, 0.878);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+    .barra-buscar{
+        width: 100%;
+        height: 150px;
+        // background: $blanco;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input[type="text"]{
+            width: 400px;
+            height: 40px;
+            border-radius: 20px;
+            margin: 0 30px;
+        }
+        i{
+            color: $blanco;
+            font-size: 30px;
+        }
+    }
+}
+
 body {
 
     header {
@@ -177,6 +208,14 @@ body {
                 opacity: .5;
                 background-size: cover;
                 background-position: center center;
+                align-items: center;
+                justify-content: center;
+                margin-top: 140px;
+
+                .span{
+
+                }
+
             }
         }
 
@@ -296,9 +335,27 @@ body {
         }
 
         .img-calendario {
-            width: 70% !important;
+            width: 100% !important;
             margin: 0 auto;
         }
+        .formulario{
+            background: #ebeeee;
+            form{
+                label{
+                    font-size: 18px;
+                    margin: 10px 0;
+                }
+                input [type="text"],[type="email"],[type="number"]{
+                    width: 100%;
+                }
+            }
+        }
+        .cont-eventos{
+            overflow-y: scroll;
+            height: 950px;
+            
+        }
+
     }
 
     footer {

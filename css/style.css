@@ -11,6 +11,50 @@ img {
   height: auto;
 }
 
+.fondo-buscar {
+  background: rgba(0, 0, 0, 0.878);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.fondo-buscar .barra-buscar {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fondo-buscar .barra-buscar input[type="text"] {
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 30px;
+}
+
+.fondo-buscar .barra-buscar i {
+  color: #fff;
+  font-size: 30px;
+}
+
 body header .nav-bar {
   width: 100%;
   height: 80px;
@@ -199,6 +243,11 @@ body main #banner .banner-caritas {
   opacity: .5;
   background-size: cover;
   background-position: center center;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 140px;
 }
 
 body main #cards {
@@ -317,8 +366,26 @@ body main #cards-two .img-card-top {
 }
 
 body main .img-calendario {
-  width: 70% !important;
+  width: 100% !important;
   margin: 0 auto;
+}
+
+body main .formulario {
+  background: #ebeeee;
+}
+
+body main .formulario form label {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+body main .formulario form input [type="text"], body main .formulario form [type="email"], body main .formulario form [type="number"] {
+  width: 100%;
+}
+
+body main .cont-eventos {
+  overflow-y: scroll;
+  height: 950px;
 }
 
 body footer .logo-footer {
