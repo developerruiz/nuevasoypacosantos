@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body header .nav-bar {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  background: #fff;
+}
+
+body header .nav-bar .logo {
+  width: 15%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav-bar .menu {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav-bar .menu .lista-menu {
+  list-style: none;
+}
+
+body header .nav-bar .menu .lista-menu li a {
+  width: 150px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #121212;
+  font-weight: 700;
+}
+
+body header .nav-bar .menu .lista-menu li a:hover {
+  -webkit-text-decoration: underline 4px;
+          text-decoration: underline 4px;
+}
+
+body header .nav-bar .buscar {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav-submenu {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+}
+
+body header .nav-submenu .lista-submenu {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .nav-submenu .lista-submenu li {
+  width: 200px;
+}
+
+body header .nav-submenu .lista-submenu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+body header .nav-submenu .lista-submenu li a:hover {
+  -webkit-text-decoration: underline 4px;
+          text-decoration: underline 4px;
+}
+
+body main {
+  overflow: hidden;
+}
+
+body main #banner .banner {
+  width: 100%;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ebeeee;
+}
+
+body main #banner .banner h1 {
+  margin-left: 10%;
+}
+
+body main #banner .banner h1 span {
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body main #banner .banner .img-pacosantos {
+  width: 60%;
+  overflow: hidden;
+  margin-right: -100px;
+  height: 550px;
+  margin-left: auto;
+  background-image: url(../img/paco-banner.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 105px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+body main #cards {
+  margin-top: 200px;
+}
+
+body main #cards .cont-cards {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+body main #cards .cont-cards .card {
+  overflow: hidden;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+body main #cards .cont-cards .card:hover {
+  margin-top: -10px;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+body main #cards .cont-cards .img-deg {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  width: 120%;
+  margin-top: -30px;
+  margin-left: -50px;
+}
+
+body main #cards .cont-cards .img-deg img {
+  border-radius: 20px;
+}
+
+body main #img-text .img-left {
+  width: 450px;
+  height: 550px;
+  background-image: url(../img/paco-img.jpeg);
+  background-size: cover;
+  background-position: -150px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+body main #cards-two {
+  margin-top: 80px;
+}
+
+body main #cards-two .cards-two {
+  margin-top: 150px;
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+body main #cards-two .cards-two .card-body p {
+  text-align: justify;
+}
+
+body main #cards-two .img-card-top {
+  margin-top: -100px;
+  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+}
+
+body footer .logo-footer {
+  width: 250px;
+}
+
+body .copywrite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  height: 60px;
+}
+
+body .copywrite p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

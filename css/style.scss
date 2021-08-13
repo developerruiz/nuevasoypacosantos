@@ -1,0 +1,228 @@
+$blanco: #fff;
+$fondo-degradado: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+$gris: #ebeeee;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    header {
+        .nav-bar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between !important;
+            background: $blanco;
+
+            .logo {
+                width: 15%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu {
+
+                width: 70%;
+                display: flex;
+                justify-content: center;
+
+                .lista-menu {
+                    list-style: none;
+
+                    li {
+
+                        a {
+                            width: 150px;
+                            height: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-decoration: none;
+                            color: #121212;
+                            font-weight: 700;
+
+                            &:hover {
+
+                                text-decoration: underline 4px;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .buscar {
+                width: 15%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .nav-submenu {
+            width: 100%;
+            height: 60px;
+            background: $fondo-degradado;
+
+            .lista-submenu {
+                width: 100%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    width: 200px;
+                    a{
+                        color: $blanco;
+                        text-decoration: none;
+                        font-weight: 600;
+                        &:hover{
+                            text-decoration: underline 4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        overflow: hidden;
+
+        #banner {
+            .banner {
+
+                width: 100%;
+                height: 400px;
+                align-items: center;
+                display: flex;
+                background: $gris;
+
+                h1 {
+                    margin-left: 10%;
+
+                    span {
+                        background: $fondo-degradado;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+
+                .img-pacosantos {
+                    width: 60%;
+                    // margin-top: 100px;
+                    overflow: hidden;
+                    margin-right: -100px;
+                    height: 550px;
+                    margin-left: auto;
+                    background-image: url(../img/paco-banner.jpeg);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 0 0 0 105px;
+                    transform: rotate(-5deg);
+                }
+            }
+        }
+
+        #cards {
+            margin-top: 200px;
+
+            .cont-cards {
+                justify-content: space-around !important;
+
+                .card {
+                    overflow: hidden;
+                    transition: .1s ease-in;
+
+                    &:hover{
+                        margin-top: -10px;
+                        transition: .1s ease-in;
+                    }
+                }
+
+                .img-deg {
+                    transform: rotate(10deg);
+                    width: 120%;
+                    margin-top: -30px;
+                    margin-left: -50px;
+
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+
+        #img-text {
+            .img-left {
+                width: 450px;
+                height: 550px;
+                background-image: url(../img/paco-img.jpeg);
+                background-size: cover;
+                background-position: -150px;
+                background-repeat: no-repeat;
+                border-radius: 25px;
+            }
+        }
+
+        #cards-two {
+            margin-top: 80px;
+
+            .cards-two {
+                margin-top: 150px;
+                justify-content: space-around !important;
+
+
+                .card-body {
+
+                    p {
+                        text-align: justify;
+                    }
+
+                }
+
+
+
+            }
+
+            .img-card-top {
+                margin-top: -100px;
+                border-radius: 20px;
+                width: 120px;
+                height: 120px;
+                background: $fondo-degradado;
+            }
+
+        }
+    }
+    footer{
+        .logo-footer{
+            width: 250px;
+        }
+    }
+    .copywrite{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $fondo-degradado;   
+        height: 60px;
+        p{
+            font-size: 16px;
+            font-weight: 600;
+            color: $blanco;
+        }
+    }
+}
