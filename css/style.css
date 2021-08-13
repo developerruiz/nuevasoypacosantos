@@ -306,6 +306,11 @@ body main #cards-two .img-card-top {
   background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
 }
 
+body main .img-calendario {
+  width: 70% !important;
+  margin: 0 auto;
+}
+
 body footer .logo-footer {
   width: 250px;
 }
