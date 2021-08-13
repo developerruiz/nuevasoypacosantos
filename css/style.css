@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +24,8 @@ body header .nav-bar {
       -ms-flex-pack: justify !important;
           justify-content: space-between !important;
   background: #fff;
+  z-index: 9999999;
+  position: absolute;
 }
 
 body header .nav-bar .logo {
@@ -37,6 +40,7 @@ body header .nav-bar .logo {
 }
 
 body header .nav-bar .menu {
+  z-index: 9999999;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,11 +52,11 @@ body header .nav-bar .menu {
 
 body header .nav-bar .menu .lista-menu {
   list-style: none;
+  z-index: 9999999;
 }
 
 body header .nav-bar .menu .lista-menu li a {
   width: 150px;
-  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,12 +87,16 @@ body header .nav-bar .buscar {
 }
 
 body header .nav-submenu {
+  z-index: 9999999;
+  position: absolute;
+  margin-top: 80px;
   width: 100%;
   height: 60px;
-  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
 }
 
 body header .nav-submenu .lista-submenu {
+  z-index: 9999999;
   width: 100%;
   height: 60px;
   display: -webkit-box;
@@ -122,6 +130,7 @@ body main {
 }
 
 body main #banner .banner {
+  z-index: 9;
   width: 100%;
   height: 400px;
   -webkit-box-align: center;
@@ -138,23 +147,58 @@ body main #banner .banner h1 {
 }
 
 body main #banner .banner h1 span {
-  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 body main #banner .banner .img-pacosantos {
   width: 60%;
+  position: absolute;
   overflow: hidden;
   margin-right: -100px;
   height: 550px;
-  margin-left: auto;
+  margin-top: 100px;
+  z-index: 0;
+  right: 0;
   background-image: url(../img/paco-banner.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0 0 0 105px;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
+}
+
+body main #banner .banner-ellas {
+  width: 100%;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ebeeee;
+  background-image: url(../img/ellas-fondo-baner.jpg);
+  opacity: .5;
+  background-size: cover;
+  background-position: center center;
+}
+
+body main #banner .banner-tlalne {
+  width: 100%;
+  height: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ebeeee;
+  background-image: url(../img/fondosoypacosantos.png);
+  opacity: .5;
+  background-size: cover;
+  background-position: center center;
 }
 
 body main #cards {
@@ -200,6 +244,46 @@ body main #img-text .img-left {
   border-radius: 25px;
 }
 
+body main #img-text .img-left-quienes {
+  width: 450px;
+  height: 550px;
+  background-image: url(../img/quienes-paco.jpeg);
+  background-size: cover;
+  background-position: -100px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+body main #img-text .img-left-ellas {
+  width: 450px;
+  height: 550px;
+  background-image: url(../img/ellas.jpeg);
+  background-size: cover;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+body main #img-text .img-right-ellas {
+  width: 450px;
+  height: 550px;
+  background-image: url(../img/ellas-2.jpeg);
+  background-size: cover;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+body main #img-text .img-empresarial {
+  width: 450px;
+  height: 550px;
+  background-image: url(../img/histoia-empresarial.jpeg);
+  background-size: cover;
+  background-position: -100px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
 body main #cards-two {
   margin-top: 80px;
 }
@@ -219,11 +303,28 @@ body main #cards-two .img-card-top {
   border-radius: 20px;
   width: 120px;
   height: 120px;
-  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
 }
 
 body footer .logo-footer {
   width: 250px;
+}
+
+body footer .redes-sociales ul li i {
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+}
+
+body footer .menu-footer ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #121212;
+}
+
+body footer .menu-footer ul li a::before {
+  content: "►";
 }
 
 body .copywrite {
@@ -236,7 +337,7 @@ body .copywrite {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow, yellow);
+  background: linear-gradient(50deg, steelblue, steelblue, red, red 60%, yellow);
   height: 60px;
 }
 
