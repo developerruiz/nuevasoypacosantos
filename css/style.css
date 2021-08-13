@@ -185,7 +185,7 @@ body main #banner .banner-ellas {
   background-position: center center;
 }
 
-body main #banner .banner-tlalne {
+body main #banner .banner-caritas {
   width: 100%;
   height: 400px;
   -webkit-box-align: center;
@@ -203,6 +203,16 @@ body main #banner .banner-tlalne {
 
 body main #cards {
   margin-top: 200px;
+}
+
+body main #cards .card-shadow {
+  text-decoration: none;
+  color: #000;
+}
+
+body main #cards .card-shadow:hover {
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 body main #cards .cont-cards {

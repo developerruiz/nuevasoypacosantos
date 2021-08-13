@@ -166,7 +166,8 @@ body {
                 background-position: center center;
 
             }
-            .banner-tlalne{
+
+            .banner-caritas {
                 width: 100%;
                 height: 400px;
                 align-items: center;
@@ -181,6 +182,14 @@ body {
 
         #cards {
             margin-top: 200px;
+
+            .card-shadow {
+                text-decoration: none;
+                color: #000;
+                &:hover{
+                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2)!important;
+                }
+            }
 
             .cont-cards {
                 justify-content: space-around !important;
@@ -285,8 +294,9 @@ body {
             }
 
         }
-        .img-calendario{
-            width: 70%!important;
+
+        .img-calendario {
+            width: 70% !important;
             margin: 0 auto;
         }
     }
@@ -295,10 +305,11 @@ body {
         .logo-footer {
             width: 250px;
         }
-        .redes-sociales{
-            ul{
-                li{
-                    i{
+
+        .redes-sociales {
+            ul {
+                li {
+                    i {
                         background: $fondo-degradado;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -307,14 +318,16 @@ body {
                 }
             }
         }
-        .menu-footer{
-            ul{
-                li{
-                    a{
+
+        .menu-footer {
+            ul {
+                li {
+                    a {
                         text-decoration: none;
                         font-size: 18px;
                         color: #121212;
-                        &::before{
+
+                        &::before {
                             content: "►";
                         }
                     }
